@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de E-business e E-commerce</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light gray-blue background */
+            color: #334155; /* Dark slate text */
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background-color: #ffffff;
+            border-radius: 1rem; /* Rounded corners for the main container */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            color: #1e3a8a; /* Dark blue for titles */
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .concept-card {
+            background-color: #eff6ff; /* Lighter blue for concept cards */
+            border-left: 4px solid #3b82f6; /* Blue border on the left */
+            padding: 1rem;
+            border-radius: 0.75rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+        .concept-card h3 {
+            color: #1d4ed8; /* Darker blue for concept headings */
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .activity-card {
+            background-color: #f0fdf4; /* Light green for activity cards */
+            border: 1px solid #22c55e; /* Green border */
+            padding: 1.5rem;
+            border-radius: 1rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        .activity-card label {
+            display: block;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            padding: 0.5rem 0.75rem;
+            background-color: #f8fafc; /* Lighter for options */
+            border-radius: 0.5rem;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .activity-card label:hover {
+            background-color: #e0f2fe; /* Light blue on hover */
+        }
+        .activity-card input[type="radio"] {
+            margin-right: 0.75rem;
+            transform: scale(1.2); /* Slightly larger radio buttons */
+            accent-color: #3b82f6; /* Blue accent color */
+        }
+        .feedback-message {
+            margin-top: 1rem;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+        }
+        .feedback-correct {
+            background-color: #d1fae5; /* Green light */
+            color: #065f46; /* Green dark */
+        }
+        .feedback-incorrect {
+            background-color: #fee2e2; /* Red light */
+            color: #991b1b; /* Red dark */
+        }
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            transition: background-color 0.2s ease-in-out, transform 0.1s ease-out;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        .btn-primary {
+            background-color: #3b82f6; /* Blue */
+            color: #ffffff;
+        }
+        .btn-primary:hover {
+            background-color: #2563eb; /* Darker blue */
+        }
+        .btn-secondary {
+            background-color: #cbd5e1; /* Gray */
+            color: #475569;
+        }
+        .btn-secondary:hover {
+            background-color: #94a3b8; /* Darker gray */
+        }
+        .border-t-2 {
+            border-top-width: 2px;
+        }
+        .border-blue-700 {
+            border-color: #1d4ed8;
+        }
+    </style>
+</head>
+<body class="p-4">
+    <div class="container">
+        <header class="text-center mb-6">
+            <h1 class="text-4xl section-title mb-2">Fundamentos de E-business e E-commerce</h1>
+            <p class="text-lg text-gray-600">Explore os conceitos essenciais e teste seus conhecimentos!</p>
+        </header>
+
+        <!-- Seção de Conceitos Chave -->
+        <section class="mb-8">
+            <h2 class="text-3xl section-title mb-4">Conceitos Chave</h2>
+
+            <div class="concept-card">
+                <h3>O que é E-business?</h3>
+                <p>O E-business (negócios eletrônicos) refere-se à utilização de tecnologias digitais e da internet para otimizar e gerenciar todas as operações de uma empresa, tanto internas quanto externas. Isso inclui vendas, marketing, atendimento ao cliente, gestão da cadeia de suprimentos, colaboração com parceiros e muito mais, transformando a empresa em um ecossistema digital.</p>
+            </div>
+
+            <div class="concept-card">
+                <h3>O que é E-commerce?</h3>
+                <p>O E-commerce (comércio eletrônico) é um subconjunto do e-business, focado especificamente na compra e venda de bens e serviços, ou na transmissão de fundos e dados, através de redes eletrônicas, principalmente a internet. Em sua essência, o e-commerce é a transação financeira online entre compradores e vendedores.</p>
+            </div>
+
+            <div class="concept-card">
+                <h3>M-Commerce e Mobile-First</h3>
+                <p>M-Commerce (comércio móvel) são transações eletrônicas realizadas via dispositivos móveis (smartphones, tablets, wearables). O conceito de Mobile-First é uma filosofia de design e desenvolvimento que prioriza a experiência para dispositivos móveis antes de adaptá-la para telas maiores. Isso garante que a funcionalidade e usabilidade sejam otimizadas para o ambiente móvel, onde a maioria das interações e compras acontece hoje.</p>
+            </div>
+
+            <div class="concept-card">
+                <h3>Benefícios do E-business</h3>
+                <p>Os negócios eletrônicos trazem diversos benefícios, como comodidade e onipresença para o cliente, alcance de novos mercados globais, maior igualdade competitiva (potencial), atuação 24/7, melhor conhecimento e personalização para clientes (via IA e Big Data), maior rapidez para atingir o mercado, mix ampliado de produtos (dropshipping, marketplaces), melhor gestão da cadeia de suprimentos (digitalização, IoT), trabalho colaborativo (plataformas em nuvem), mobilidade e comunicação aprimoradas, novas fontes de receita (assinaturas, economia de compartilhamento) e visibilidade ampliada via marketing digital.</p>
+            </div>
+
+            <div class="concept-card">
+                <h3>Modalidades de Relacionamento</h3>
+                <p>O e-business envolve diferentes tipos de interações:</p>
+                <ul class="list-disc pl-5">
+                    <li><strong>B2C (Business to Consumer):</strong> Empresas vendendo para consumidores finais (ex: loja virtual de roupas).</li>
+                    <li><strong>B2B (Business to Business):</strong> Empresas vendendo para outras empresas (ex: fornecedor de matéria-prima para fábrica via extranet).</li>
+                    <li><strong>C2C (Consumer to Consumer):</strong> Consumidores vendendo entre si (ex: plataformas de leilão, brechós online como Enjoei).</li>
+                    <li><strong>C2B (Consumer to Business):</strong> Consumidores oferecendo valor para empresas (ex: freelancers, influenciadores digitais, pesquisa de mercado online).</li>
+                    <li><strong>B2B2C (Business to Business to Consumer):</strong> Uma empresa fornece a outra, que então vende ao consumidor final (ex: distribuidores, marketplaces como iFood).</li>
+                    <li>Outras modalidades incluem B2E (Business to Employee), E2B (Employee to Business), e interações com o governo (G2B, B2G, G2C, C2G, G2G).</li>
+                </ul>
+            </div>
+
+            <div class="concept-card">
+                <h3>Tecnologias Habilitadoras</h3>
+                <p>O e-business moderno é impulsionado por tecnologias como Inteligência Artificial (IA) para personalização e automação, Machine Learning para análise preditiva, Big Data para insights de mercado, Realidade Aumentada (AR) para experiência imersiva, assistentes de voz (Voice Commerce) e Internet das Coisas (IoT) para otimização da cadeia de suprimentos.</p>
+            </div>
+
+            <div class="concept-card">
+                <h3>Aspectos Legais e Segurança</h3>
+                <p>A proteção de dados e a segurança são cruciais. Regulamentações como a LGPD (Brasil) e GDPR (Europa) impõem diretrizes rigorosas para o tratamento de dados pessoais, exigindo consentimento e transparência. A segurança da informação envolve a proteção contra fraudes e ataques cibernéticos (phishing, malware), com uso de criptografia e sistemas antifraude.</p>
+            </div>
+        </section>
+
+        <!-- Seção de Atividades Interativas -->
+        <section class="mb-8 border-t-2 border-blue-700 pt-6">
+            <h2 class="text-3xl section-title mb-4">Atividades Interativas</h2>
+            <p class="mb-6 text-gray-700">Teste seus conhecimentos sobre os conceitos de E-business e E-commerce!</p>
+
+            <!-- Atividade 1: Identificação de Modalidades -->
+            <div id="activity1" class="activity-card">
+                <h3 class="text-xl font-semibold mb-4 text-green-700">Atividade 1: Identificação de Modalidades</h3>
+                <p class="mb-4">Uma plataforma onde desenvolvedores freelancers oferecem seus serviços diretamente para empresas que precisam de projetos de software é um exemplo de qual modalidade de relacionamento?</p>
+                <div class="space-y-3">
+                    <label>
+                        <input type="radio" name="q1" value="b2c"> B2C (Business to Consumer)
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="b2b"> B2B (Business to Business)
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="c2b"> C2B (Consumer to Business)
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="c2c"> C2C (Consumer to Consumer)
+                    </label>
+                </div>
+                <button onclick="checkAnswer('q1', 'c2b', 'feedback1')" class="btn btn-primary mt-4 mr-2">Verificar</button>
+                <button onclick="resetActivity('q1', 'feedback1')" class="btn btn-secondary mt-4">Reiniciar</button>
+                <div id="feedback1" class="feedback-message hidden"></div>
+            </div>
+
+            <!-- Atividade 2: Reconhecimento de Benefícios -->
+            <div id="activity2" class="activity-card">
+                <h3 class="text-xl font-semibold mb-4 text-green-700">Atividade 2: Reconhecimento de Benefícios</h3>
+                <p class="mb-4">Uma loja virtual utiliza Inteligência Artificial para analisar seu histórico de compras e sugerir produtos que você provavelmente gostará. Qual benefício do e-business isso exemplifica?</p>
+                <div class="space-y-3">
+                    <label>
+                        <input type="radio" name="q2" value="comodidade"> Comodidade e Onipresença
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="conhecimento_personalizacao"> Melhor Conhecimento dos Clientes e Personalização
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="rapidez_mercado"> Maior Rapidez para Atingir o Mercado
+                    </label>
+                </div>
+                <button onclick="checkAnswer('q2', 'conhecimento_personalizacao', 'feedback2')" class="btn btn-primary mt-4 mr-2">Verificar</button>
+                <button onclick="resetActivity('q2', 'feedback2')" class="btn btn-secondary mt-4">Reiniciar</button>
+                <div id="feedback2" class="feedback-message hidden"></div>
+            </div>
+
+            <!-- Atividade 3: Verdadeiro ou Falso (LGPD) -->
+            <div id="activity3" class="activity-card">
+                <h3 class="text-xl font-semibold mb-4 text-green-700">Atividade 3: Verdadeiro ou Falso</h3>
+                <p class="mb-4">A LGPD (Lei Geral de Proteção de Dados) se aplica apenas a empresas europeias e não tem impacto direto nas operações de e-commerce no Brasil.</p>
+                <div class="space-y-3">
+                    <label>
+                        <input type="radio" name="q3" value="true"> Verdadeiro
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="false"> Falso
+                    </label>
+                </div>
+                <button onclick="checkAnswer('q3', 'false', 'feedback3')" class="btn btn-primary mt-4 mr-2">Verificar</button>
+                <button onclick="resetActivity('q3', 'feedback3')" class="btn btn-secondary mt-4">Reiniciar</button>
+                <div id="feedback3" class="feedback-message hidden"></div>
+            </div>
+
+            <!-- Atividade 4: E-business vs. E-commerce -->
+            <div id="activity4" class="activity-card">
+                <h3 class="text-xl font-semibold mb-4 text-green-700">Atividade 4: E-business vs. E-commerce</h3>
+                <p class="mb-4">Qual das seguintes afirmações melhor descreve a relação entre E-business e E-commerce?</p>
+                <div class="space-y-3">
+                    <label>
+                        <input type="radio" name="q4" value="sinonimos"> São termos sinônimos.
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="ecommerce_subset"> E-commerce é um subconjunto do E-business, focado na transação.
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="ebusiness_subset"> E-business é um subconjunto do E-commerce, focado nas operações internas.
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="independentes"> E-commerce e E-business são conceitos completamente independentes.
+                    </label>
+                </div>
+                <button onclick="checkAnswer('q4', 'ecommerce_subset', 'feedback4')" class="btn btn-primary mt-4 mr-2">Verificar</button>
+                <button onclick="resetActivity('q4', 'feedback4')" class="btn btn-secondary mt-4">Reiniciar</button>
+                <div id="feedback4" class="feedback-message hidden"></div>
+            </div>
+
+            <!-- Atividade 5: Mobile-First Concept -->
+            <div id="activity5" class="activity-card">
+                <h3 class="text-xl font-semibold mb-4 text-green-700">Atividade 5: Conceito de Mobile-First</h3>
+                <p class="mb-4">A filosofia 'Mobile-First' no desenvolvimento web significa:</p>
+                <div class="space-y-3">
+                    <label>
+                        <input type="radio" name="q5" value="desktop_first"> Criar a versão para desktop primeiro e depois adaptá-la para mobile.
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="mobile_priority"> Priorizar a experiência e funcionalidade para dispositivos móveis antes de expandir para telas maiores.
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="no_desktop"> Excluir completamente o desenvolvimento para desktop.
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="only_native_apps"> Utilizar apenas aplicativos nativos para todas as interações.
+                    </label>
+                </div>
+                <button onclick="checkAnswer('q5', 'mobile_priority', 'feedback5')" class="btn btn-primary mt-4 mr-2">Verificar</button>
+                <button onclick="resetActivity('q5', 'feedback5')" class="btn btn-secondary mt-4">Reiniciar</button>
+                <div id="feedback5" class="feedback-message hidden"></div>
+            </div>
+
+            <!-- Atividade 6: Role of AI/ML in E-business -->
+            <div id="activity6" class="activity-card">
+                <h3 class="text-xl font-semibold mb-4 text-green-700">Atividade 6: Tecnologias Habilitadoras (IA)</h3>
+                <p class="mb-4">Qual tecnologia é mais utilizada para sistemas de recomendação de produtos e personalização em tempo real no e-commerce?</p>
+                <div class="space-y-3">
+                    <label>
+                        <input type="radio" name="q6" value="blockchain"> Blockchain
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="iot"> Internet das Coisas (IoT)
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="ia"> Inteligência Artificial (IA)
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="vr"> Realidade Virtual (VR)
+                    </label>
+                </div>
+                <button onclick="checkAnswer('q6', 'ia', 'feedback6')" class="btn btn-primary mt-4 mr-2">Verificar</button>
+                <button onclick="resetActivity('q6', 'feedback6')" class="btn btn-secondary mt-4">Reiniciar</button>
+                <div id="feedback6" class="feedback-message hidden"></div>
+            </div>
+
+            <!-- Atividade 7: New Modality (B2B2C) -->
+            <div id="activity7" class="activity-card">
+                <h3 class="text-xl font-semibold mb-4 text-green-700">Atividade 7: Nova Modalidade</h3>
+                <p class="mb-4">Uma plataforma de entrega de comida que conecta restaurantes (empresas), entregadores parceiros (outras empresas ou autônomos) e clientes finais é um exemplo de qual modalidade de relacionamento?</p>
+                <div class="space-y-3">
+                    <label>
+                        <input type="radio" name="q7" value="b2c"> B2C
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="c2c"> C2C
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="b2b2c"> B2B2C
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="g2c"> G2C
+                    </label>
+                </div>
+                <button onclick="checkAnswer('q7', 'b2b2c', 'feedback7')" class="btn btn-primary mt-4 mr-2">Verificar</button>
+                <button onclick="resetActivity('q7', 'feedback7')" class="btn btn-secondary mt-4">Reiniciar</button>
+                <div id="feedback7" class="feedback-message hidden"></div>
+            </div>
+
+        </section>
+
+        <footer class="text-center text-gray-500 text-sm mt-8 pt-4 border-t border-gray-300">
+            <p>&copy; 2025 Fundamentos de Sistemas de Informação - Desenvolvido para fins educacionais.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Função para verificar a resposta da atividade
+        function checkAnswer(questionName, correctAnswer, feedbackId) {
+            const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+            const feedbackElement = document.getElementById(feedbackId);
+
+            // Hide previous feedback
+            feedbackElement.classList.add('hidden');
+            feedbackElement.classList.remove('feedback-correct', 'feedback-incorrect');
+
+            if (selectedOption) {
+                if (selectedOption.value === correctAnswer) {
+                    feedbackElement.textContent = 'Correto! 🎉 ' + getExplanation(questionName);
+                    feedbackElement.classList.add('feedback-correct');
+                } else {
+                    feedbackElement.textContent = 'Incorreto. Tente novamente ou revise o conceito. ' + getExplanation(questionName);
+                    feedbackElement.classList.add('feedback-incorrect');
+                }
+            } else {
+                feedbackElement.textContent = 'Por favor, selecione uma opção.';
+                feedbackElement.classList.add('feedback-incorrect');
+            }
+            feedbackElement.classList.remove('hidden');
+        }
+
+        // Função para obter a explicação para cada questão
+        function getExplanation(questionName) {
+            switch (questionName) {
+                case 'q1':
+                    return 'Explicação: C2B é quando um consumidor (o freelancer) oferece um serviço para uma empresa.';
+                case 'q2':
+                    return 'Explicação: A utilização de IA para analisar o histórico de compras e fazer sugestões exemplifica o benefício de "Melhor Conhecimento dos Clientes e Personalização".';
+                case 'q3':
+                    return 'Explicação: Falso. A LGPD é a Lei Geral de Proteção de Dados do Brasil e se aplica a todas as empresas que tratam dados pessoais no país, incluindo as operações de e-commerce.';
+                case 'q4':
+                    return 'Explicação: E-commerce é um subconjunto do E-business, focado nas transações de compra e venda, enquanto E-business engloba todas as operações digitalizadas da empresa.';
+                case 'q5':
+                    return 'Explicação: A filosofia Mobile-First significa desenvolver a experiência primeiro para dispositivos móveis, garantindo otimização para telas menores e interações por toque antes de escalar para telas maiores.';
+                case 'q6':
+                    return 'Explicação: A Inteligência Artificial (IA) é amplamente utilizada para sistemas de recomendação e personalização em tempo real, analisando dados de usuários para prever preferências.';
+                case 'q7':
+                    return 'Explicação: B2B2C descreve uma cadeia onde uma empresa (restaurante) se conecta a outra (entregadores ou plataforma), que por sua vez atende o consumidor final.';
+                default:
+                    return '';
+            }
+        }
+
+        // Função para reiniciar a atividade
+        function resetActivity(questionName, feedbackId) {
+            const radios = document.querySelectorAll(`input[name="${questionName}"]`);
+            radios.forEach(radio => radio.checked = false);
+            const feedbackElement = document.getElementById(feedbackId);
+            feedbackElement.classList.add('hidden');
+            feedbackElement.classList.remove('feedback-correct', 'feedback-incorrect');
+            feedbackElement.textContent = '';
+        }
+    </script>
+</body>
+</html>
